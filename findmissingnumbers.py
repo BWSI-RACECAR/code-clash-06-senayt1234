@@ -48,11 +48,11 @@ class Solution:
             #return type: list of int
             
             #TODO: Write code below to return an int list with the solution to the prompt.
-            numbers.sort()
-            numbers = [int(a) for a in numbers]
             
+            numbers = [round(a) for a in numbers]
+            numbers.sort()
             if len(numbers) == 0:
-                 return "none missing"
+                 return "None missing"
             if numbers == None:
                  return "Invalid input"
             index = 0
@@ -65,9 +65,10 @@ class Solution:
                 while dif>sub:
                     dif = dif -1
                     output.append(numbers[index]+dif)
-                index = index+1      
+                index = index+1 
+            numbers.sort()
             return output
-
+            
 def main():
     array = input().split(" ")
     for x in range (0, len(array)):
