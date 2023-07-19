@@ -51,7 +51,7 @@ class Solution:
             
             numbers = [round(a) for a in numbers]
             numbers.sort()
-            if len(numbers) == 0:
+            if len(numbers) == 1:
                  return "None missing"
             if numbers == None:
                  return "Invalid input"
