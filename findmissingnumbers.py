@@ -58,6 +58,7 @@ class Solution:
             index = 0
             dif = 0
             output = []
+            sub = 1
             while (len(numbers)-1)>index:
                 if numbers[index+1] - numbers[index]>1:
                     dif = numbers[index+1] - numbers[index]
