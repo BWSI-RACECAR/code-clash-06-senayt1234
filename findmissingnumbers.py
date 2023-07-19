@@ -60,13 +60,13 @@ class Solution:
             output = []
             sub = 1
             while (len(numbers)-1)>index:
-                if numbers[index+1] - numbers[index]>1:
+                if (numbers[index+1] - numbers[index])>1:
                     dif = numbers[index+1] - numbers[index]
                 while dif>sub:
                     dif = dif -1
                     output.append(numbers[index]+dif)
                 index = index+1 
-            numbers.sort()
+            output.sort()
             return output
             
 def main():
